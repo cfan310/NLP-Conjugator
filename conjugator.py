@@ -17,6 +17,7 @@ def conjugate(verb, tense):
 		return "Not a verb" # handles non-verb input 
 
 user_verbInput = input("Enter a Spanish verb: ")
-conjugated_verb = conjugate_verb(user_verb, "present") # can change verb tense as needed
-print(f"The verb '{user_verbInput}' conjugated in present tense is: {conjugated_verb}")
+user_tenseInput = input("Enter the verb tense (e.g. 'present', 'preterite', etc...")
+conjugated_verb = conjugate(user_verbInput, user_tenseInput) # can change verb tense as needed
+print(f"The verb '{user_verbInput}' conjugated in {user_tenseInput} tense is: {conjugated_verb}")
 
